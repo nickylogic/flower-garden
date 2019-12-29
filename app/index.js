@@ -1,14 +1,17 @@
 import express from 'express';
 const app = express();
 
-import Redis from 'redisng';
+app.use(express.static('css',{extensions:['css']}));
+app.use(express.static('img',{extensions:['jpg','jpeg','gif','png','svg','ico']}));
+app.use(express.static('www',{extensions:['html']}));
+
+app.get('/', (req, res) => res.redirect('/index.html'));
+app.listen(3000, () => console.log(`Flower Garden listening on port 3000!`));
+
+
+/*import Redis from 'redisng';
 const redis = new Redis();
-
-app.get('/', (req, res) => res.send('Hello World!'));
-app.listen(3000, () => console.log(`Example app listening on port 3000!`));
-
-
-/*redis.connect().then(function() {
+redis.connect().then(function() {
   return redis.set('KEY', 'VALUE').then(function() {
     return redis.get('KEY')
   }).then(function(result) {
