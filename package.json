@@ -2,12 +2,11 @@
   "name": "flower-garden",
   "version": "1.0.0",
   "description": "Demo app to learn Vue, GraphQL and Redis",
-  "main": "app/index.js",
+  "main": "index.js",
   "type": "module",
   "engines": {
     "node": ">=0.13"
   },
-  "engineStrict": true,
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
