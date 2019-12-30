@@ -1,0 +1,25 @@
+# This schema is used by both front end and back end
+
+type Species {
+    id: String!,
+    name: String!,
+    image: String!
+}
+
+type Flower {
+    id: String!,
+    speciesId: String!,
+    plotId: String
+}
+
+type Point {
+    x: Int!,
+    y: Int
+}
+
+type Plot {
+    id: String!,
+    name: String!,
+    corners: [Point!]!,
+    slots: [Point!]
+}

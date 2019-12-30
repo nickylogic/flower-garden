@@ -1,10 +1,8 @@
 import express from 'express';
 const app = express();
 
-app.use(express.static('vue',{extensions:['js','vue']}));
-app.use(express.static('css',{extensions:['css']}));
-app.use(express.static('img',{extensions:['jpg','jpeg','gif','png','svg','ico']}));
-app.use(express.static('doc',{extensions:['html','css','img','graphql']}));
+app.use(express.static('server',{extensions:['graphql','gql']}));
+app.use(express.static('web/assets',{extensions:['css','jpg','jpeg','gif','png','svg','ico']}));
 
 app.get('/', (req, res) => res.redirect('/index.html'));
 app.listen(3000, () => console.log(`Flower Garden listening on port 3000!`));
