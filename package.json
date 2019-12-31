@@ -10,16 +10,23 @@
   "dependencies": {
     "@playlyfe/gql": "^2.6.2",
     "body-parser": "^1.19.0",
+    "css-loader": "^3.4.0",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.8",
     "graphql-tools": "^4.0.6",
     "redisng": "^2.0.0",
+    "style-loader": "^1.1.2",
     "vue": "^2.6.11",
+    "vue-style-loader": "^4.1.2",
     "webpack": "^4.41.5"
   },
   "devDependencies": {
-    "@types/redis": "^2.8.14"
+    "@types/redis": "^2.8.14",
+    "@webpack-cli/info": "^0.2.0",
+    "vue-loader": "^15.8.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
     "test": "test"
