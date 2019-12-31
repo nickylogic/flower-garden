@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="app.css">
+        <title>Flower Garden</title>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/http-vue-loader"></script>
+    </head>
+    <body>
+        <div id="app">
+            <span>Flower Garden</span><br>
+            <flower-garden></flower-garden>
+        </div> 
+        <script>
+            new window.Vue({
+                el: '#app',
+                components: {
+                    'flower-garden': window.httpVueLoader('/components/FlowerGarden.vue')
+                },
+            })
+        </script>
+    </body>
+</html>

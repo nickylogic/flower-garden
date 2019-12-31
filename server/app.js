@@ -2,6 +2,7 @@ import express from 'express';
 const app = express();
 
 app.use(express.static('server',{extensions:['graphql','gql']}));
+app.use(express.static('web',{extensions:['htm','html']}));
 app.use(express.static('web/assets',{extensions:['css','jpg','jpeg','gif','png','svg','ico']}));
 
 app.get('/', (req, res) => res.redirect('/index.html'));
