@@ -1,0 +1,32 @@
+{
+  "name": "flower-garden",
+  "version": "1.0.0",
+  "description": "Flower Garden Game",
+  "main": "main.js",
+  "type": "module",
+  "engines": {
+    "node": ">=0.13"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickylogic/flower-garden.git"
+  },
+  "author": "Matt Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickylogic/flower-garden/issues"
+  },
+  "homepage": "https://github.com/nickylogic/flower-garden#readme",
+  "dependencies": {
+    "@playlyfe/gql": "^2.6.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.6",
+    "redisng": "^2.0.0"
+  }
+}

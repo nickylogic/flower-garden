@@ -5,13 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "nwjs",
+            "request": "launch",
+            "name": "Client",
+            "nwjsVersion": "any",
+            "webRoot": "${workspaceFolder}/client",
+            "cwd": "${workspaceFolder}/client",
+            "reloadAfterAttached": true
+        },
+        {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Server",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/server/app.js"
+            "program": "${workspaceFolder}/server/main.js",
+            "cwd": "${workspaceFolder}/server"
         }
     ]
 }
